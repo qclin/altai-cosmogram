@@ -89,9 +89,7 @@ display() {
   // this.setGradient(50, 150, 140, 40, this.c2, this.c1, this.X_AXIS);
 
 setGradient(x, y, w, h, c1, c2, axis) {
-
   noFill();
-
   if (axis == this.Y_AXIS) {  // Top to bottom gradient
     for (var i = y; i <= y+h; i++) {
       var inter = map(i, y, y+h, 0, 1);
